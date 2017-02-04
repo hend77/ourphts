@@ -1,0 +1,61 @@
+
+<style type="text/css">
+   /* .dauto{
+         height: 400px; 
+          width: 400px;
+    }*/
+</style>
+<h1 class="dauto">OurNet</h1>
+      
+     
+        <form id ="autorizeform" method="POST" action="/process?form=autorize" role ="form" title="OurNet" >
+            <div class="form-group">
+                <label for="login"  >Логин</label> 
+                <input type="text" class="form-control" name="login" />
+            </div>        
+            <div class="form-group">   
+                <label for="password" >Пароль</label>
+                <input type="password" class="form-control" name="password"  />
+            </div>
+                <input type="submit"  class="btn btn-default" name ="submit" id="submit" value="Отправить" style="margin-top:5px"  />
+        </form>
+
+ <!---->     
+ <script type="text/javascript">
+
+ $(document).ready(function(){
+
+      $("#autorizeform").dialog({
+        draggable:true,
+        resizable:false,
+        modal:false,
+        show:250,//скорость появления исчезновения
+        hide:{effect:'bounce', delay:250,duration:1000, easing:'easeInQuad'}       
+        //position:[100,80]
+        
+      });//показываем окно autorize
+     // $("#autorizeform").dialog( "option", "height", 200 );
+     // $("#autorizeform").dialog( "option", "width", 250 );
+
+   //validate  
+   $("#autorizeform").validate({
+       rules:{
+           login:{required:true, minlength: 2},
+           password:'required'
+       },
+        messages:{
+           login:{ required :" Введите логин!" ,
+                      minlength:" Имя должно быть не менее 2х символов!"
+           },
+          password:" Введите пароль!"
+       }
+       // errorPlacement:function(error,elem){// errorPlacement - обработчик для ошибок выравниваем сообщения об шибках для radio
+         //   if(elem.is(":radio")){
+         //       error.appendTo(elem.parent());
+        //    }else{
+        //        error.insertAfter(elem);
+        //    }
+      // }
+   });  
+ });
+ </script>

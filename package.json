@@ -1,0 +1,26 @@
+{
+  "name": "ournet",
+  "version": "1.0.0",
+  "description": "our files",
+  "main": "ournet.js",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "domain": "0.0.1",
+    "express": "^4.14.1",
+    "express-formidable": "^1.0.0",
+    "express-handlebars": "^3.0.0",
+    "express-logger": "0.0.3",
+    "express-session": "^1.15.0",
+    "lite-uploader": "^5.0.2",
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hend",
+  "license": "ISC"
+}

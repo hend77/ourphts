@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru" >
+    <head>
+        <meta charset="utf-8">
+        <title>ournet</title>                
+            
+            <link rel="stylesheet" href="/css/jquery-ui.min.css">
+            <link rel="stylesheet" href="/css/jquery-ui.structure.min.css">
+            <link rel="stylesheet" href="/css/jquery-ui.theme.min.css">            
+            <link rel="stylesheet" href="/css/bootstrap.min.css"> 
+            <link rel="stylesheet" href="/css/bootstrap-theme.min.css"> 
+            <link rel="stylesheet" href="/css/animate.min.css">
+            
+            
+            {{{_sections.head}}} <!--Вставили секцию для head-->   
+            <link rel="stylesheet" href="/css/ournet.css"> 
+    </head>
+     
+<body>
+    
+
+     <script src="/js/jquery.min.js"></script> 
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>--> 
+     <script src="/js/jquery-ui.min.js"></script>  
+     <!--<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+     <script type="text/javascript" src="/js/jquery.validate.min.js"></script> 
+     <script type="text/javascript" src="/js/messages_ru.min.js"></script>  
+     <script type="text/javascript" src="/js/bootstrap.min.js"></script> 
+     <script type="text/javascript" src=""></script> 
+{{{_sections.jsloads}}}
+{{{body}}}
+{{{_sections.jquery}}} <!--для скриптов-->
+     </br></br>
+     <!--Делаем подвал --><!---navbar-fixed-bottom фиксированный подвал row-fluid-->
+     <footer class="botfooter navbar-fixed-bottom" > <!--делаем подвал с помощью footer-->
+     <!-- <div class="navbar-bottom row-fluid botfooter" >Express.js </div>-->
+        Авторизация: {{userdata.login}}
+     </footer>
+</body>
+</html>
